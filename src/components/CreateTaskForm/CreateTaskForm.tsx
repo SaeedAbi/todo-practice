@@ -9,6 +9,7 @@ const CreateTaskForm:FC = ():ReactElement => {
            <Typography component='h2' variant='h6' mb={2}>Create A Task</Typography>
            <Stack spacing={2} sx={{width:'100%'}}>
             <TaskTitle/>
+           <TaskDescription/>
            </Stack>
        </Box>
     );
