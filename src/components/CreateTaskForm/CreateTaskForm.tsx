@@ -2,6 +2,7 @@ import React, {FC, ReactElement} from 'react';
 import {Box, Stack, Typography} from "@mui/material";
 import TaskTitle from "./_TaskTitle";
 import TaskDescription from "./_TaskDescription";
+import TaskDate from "./_TaskDate";
 
 const CreateTaskForm:FC = ():ReactElement => {
     return (
@@ -10,6 +11,7 @@ const CreateTaskForm:FC = ():ReactElement => {
            <Stack spacing={2} sx={{width:'100%'}}>
             <TaskTitle/>
            <TaskDescription/>
+               <TaskDate/>
            </Stack>
        </Box>
     );
