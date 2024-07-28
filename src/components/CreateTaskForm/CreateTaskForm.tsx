@@ -4,6 +4,8 @@ import TaskTitle from "./_TaskTitle";
 import TaskDescription from "./_TaskDescription";
 import TaskDate from "./_TaskDate";
 import TaskSelect from "./_TaskSelect";
+import {Status} from "./enums/Status";
+import {Priority} from "./enums/Priority";
 
 const CreateTaskForm:FC = ():ReactElement => {
     return (
@@ -14,8 +16,31 @@ const CreateTaskForm:FC = ():ReactElement => {
            <TaskDescription/>
                <TaskDate/>
                <Stack direction='row' spacing={2} sx={{width:'100%'}}>
-               <TaskSelect />
-               <TaskSelect/>
+               <TaskSelect label='Status' name='status' items={[
+                   {value:Status.todo,
+                   label:Status.todo.toUpperCase(),
+                   },
+                   {value:Status.inProgress,
+                   label:Status.inProgress.toUpperCase(),
+                   },
+                   {value:Status.completed,
+                    label:Status.completed.toUpperCase(),
+                   },
+               ]} />
+               <TaskSelect label='Priority' name='priority' items={[
+                   {
+                       value:Priority.low,
+                       label:Priority.low.toUpperCase(),
+                   },
+                   {
+                       value:Priority.normal,
+                       label:Priority.normal.toUpperCase(),
+                   },
+                   {
+                       value:Priority.high,
+                       label:Priority.high.toUpperCase(),
+                   },
+               ]}/>
                </Stack>
            </Stack>
        </Box>

@@ -30,15 +30,15 @@ const TaskSelect:FC<ISelect> = (props):ReactElement => {
     );
 };
 
-TaskSelect.propTypes={
-    onChange:PropTypes.func,
-    label:PropTypes.string,
-    name:PropTypes.string,
-    disabled:PropTypes.bool,
-    items:PropTypes.arrayOf(PropTypes.shape({
-        value:PropTypes.string.isRequired,
-        label:PropTypes.string.isRequired,
-    }))
-}
+// TaskSelect.propTypes={
+//     onChange:PropTypes.func,
+//     label:PropTypes.string,
+//     name:PropTypes.string,
+//     disabled:PropTypes.bool,
+//     items:PropTypes.arrayOf(PropTypes.shape({
+//         value:PropTypes.string,
+//         label:PropTypes.string,
+//     }))
+// }
 
 export default TaskSelect;
