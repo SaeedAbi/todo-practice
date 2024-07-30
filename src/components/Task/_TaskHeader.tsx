@@ -10,7 +10,7 @@ const TaskHeader:FC<ITaskHeader> = ({title='Default title',date=new Date()}):Rea
         display='flex'
         width='100%'
         justifyContent='space-between'
-        mb={4}
+        mb={3}
         >
             <Box>
                 <Typography variant='h6'>{title}</Typography>
